@@ -1,0 +1,70 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    border: 1px rgb(50, 50, 50) solid;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px 5px #d0d0d0;
+}
+
+.postTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.userName {
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.postIcon {
+    height: 30px
+}
+
+.postImage {
+    width: 280px;
+}
+
+.key {
+    text-align: left;
+    font-size: 18px;
+    color: rgb(73, 191, 126);
+    align-items: center;
+    text-align: center;
+}
+
+.value {
+    font-size: 16px;
+}
+
+.postBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.joinBtn {
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: rgb(104,217,155);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 160px;
+}
+
+.bookmarkBtn {
+    position: relative;
+}

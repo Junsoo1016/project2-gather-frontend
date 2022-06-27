@@ -1,0 +1,60 @@
+.hideSidebar {
+    width: 250px;
+    height: 500px;
+    background-color: rgb(250, 254, 218);
+    position: absolute;
+    transform: translateX(250px);
+    right: 0px;
+    transition: 1000ms;
+}
+
+.showSidebar {
+    width: 250px;
+    height: 500px;
+    background-color: rgb(250, 254, 218);
+    position: absolute;
+    transform: translateX(0px);
+    transition: 1000ms;
+    right: 0px;
+}
+
+#userCircle {
+    margin-top: 20px;
+}
+
+.userName {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.aLinkP {
+    border-top: 0.1px rgb(219, 219, 219) solid;
+}
+
+.aLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    border-bottom: 0.1px rgb(219, 219, 219) solid;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.aLink:hover {
+    background-color: rgb(104,217,155);
+    color: white;
+}
+
+
+.saved,
+.setting,
+.signOut {
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}

@@ -1,0 +1,41 @@
+.h1Box {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.abouth1 {
+    font-size: 40px;
+    width: 600px;
+
+}
+
+.pBox {
+    width: 100vw;
+    height: 500px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpBtn {
+    height: 70px;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 180px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(104,217,155);
+    color: white;
+}
+
+.aboutp {
+    font-size: 32px;
+    width: 800px;
+    margin: 100px auto;
+    color: rgb(49, 49, 49);
+}
