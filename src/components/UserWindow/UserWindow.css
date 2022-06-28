@@ -8,6 +8,11 @@
     transition: 1000ms;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 .showSidebar {
     width: 250px;
     height: 500px;
@@ -31,6 +36,7 @@
 
 .aLinkP {
     border-top: 0.1px rgb(219, 219, 219) solid;
+    
 }
 
 .aLink {
@@ -43,6 +49,7 @@
     border-bottom: 0.1px rgb(219, 219, 219) solid;
     font-size: 18px;
     font-weight: 400;
+
 }
 
 .aLink:hover {

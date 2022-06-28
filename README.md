@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+## Gather
+Gather is an app for finding and building local communites. Users gather to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Technology
 
-## Available Scripts
+HTML/CSS, JavaScript, React.js, MongoDB, Express.js
 
 In the project directory, you can run:
 
-### `npm start`
+#### Additional Libraries
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- API [The Metropolitan Museum of Art Collection API](https://metmuseum.github.io)
+- CSS Library [Mui](https://mui.com)
+- HTTP Client [Axios](https://axios-http.com)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# User Story
+- As a user, I want to be able to post events that I want to upload.
+- As a user, I want to see where events are happening in Google map.
+- As a user, I want to be able to sent my request to join events that I'm interested in.
+- As a user I want to be able to save posts that I'm interested in.
+- As a user, I want to be able to see a list of all users' posts.
 
-### `npm test`
+# Stretch Goals
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Once I am done with the user stories, we aim to build user authentication and authorization so users can interect with eachother.
+- I want to build a sign up, sign in page where users need to sign up first in order to use the app.
+- I want to build a profile page for each indivudal user.

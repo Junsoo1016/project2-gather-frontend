@@ -101,6 +101,14 @@ function App() {
     logIn: false
   })
 
+  const handleLogOut = () => {
+    setUser({
+      ...user,
+      logIn: false
+    })
+    document.location.reload()
+  }
+
   const [editProfileForm, seteditProfileForm] = useState({
     firstName: user.firstName,
     lastName: user.lastName,
@@ -200,7 +208,6 @@ function App() {
   const[sidebar, setSidebar] = useState(false)
 
   const showSidebar = () => {
-    console.log("clicked");
     setSidebar(!sidebar)
   }
   
@@ -227,7 +234,7 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<Board user = {user} postList={postList} askToJoin={askToJoin} deleteUser={deleteUser} sidebar={sidebar}/>}  />
+          <Route path="/" element={<Board user = {user} postList={postList} askToJoin={askToJoin} deleteUser={deleteUser} sidebar={sidebar} handleLogOut={handleLogOut}/>} />
           <Route path="/howToUse" element={<HowToUse/>} />
           <Route path="/login" element={<Login handleLogin={handleLogin} validateLogin={validateLogin}/>} />
           <Route path="/create-new-account" element={<SignUp handleSignUp={handleSignUp} signUpForm={signUpForm} createUser={createUser}/>} />

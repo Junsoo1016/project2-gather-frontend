@@ -13,7 +13,7 @@ const UserWindow = (props) => {
             </div>
 
             <div>
-                <Link to="/account">
+                <Link className="link" to="/account">
                 <p className="aLink aLinkP">Profile</p>
                 </Link>
             </div>
@@ -27,11 +27,11 @@ const UserWindow = (props) => {
             </div>
 
             <div className="signOut">
-                <p className="aLink">Sign Out</p>
+                <p className="aLink" onClick={() => props.handleLogOut()} >Sign Out</p>
             </div>
 
             <div>
-                <Link to="/">
+                <Link className="link" to="/">
                 <p className="aLink" onClick={() => props.deleteUser()}>Delete Account</p>
                 </Link>
             </div>
