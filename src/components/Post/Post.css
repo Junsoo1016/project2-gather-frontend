@@ -1,7 +1,6 @@
 .post {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 10% 15% 15% 20% 30% 10%;
     width: 300px;
     height: 500px;
     padding: 10px;
@@ -12,9 +11,32 @@
 }
 
 .postTop {
+    display: grid;
+    grid-row: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.Title {
+    grid-row: 2;
+}
+
+.Date {
+    grid-row: 3;
+}
+
+.Location {
+    grid-row: 4;
+}
+
+.Description {
+    grid-row: 5;
+}
+
+.postBottom {
+    grid-row: 6;
+
 }
 
 .userInfo {
