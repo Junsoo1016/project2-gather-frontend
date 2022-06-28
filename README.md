@@ -1,6 +1,9 @@
 ## Gather
 Gather is an app for finding and building local communites. Users gather to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together.
 
+![Gather](https://user-images.githubusercontent.com/103589293/176192589-0f67b32b-d5ef-45a2-b835-74445dd67145.png)
+
+
 ### Technology
 
 HTML/CSS, JavaScript, React.js, MongoDB, Express.js
