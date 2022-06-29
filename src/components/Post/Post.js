@@ -1,9 +1,11 @@
 import React from "react";
 import "./Post.css" 
 import {FaRegUserCircle, FaRegCommentDots} from 'react-icons/fa';
-import {RiBookmarkLine, RiMoreFill} from 'react-icons/ri';
+import {RiBookmarkLine, RiMoreFill, RiBookmarkFill} from 'react-icons/ri';
 
 const Post = (props) => {
+
+    const [isSaved, setIsSaved] = React.useState(false);
 
     return(
        <form className="post">
@@ -38,7 +40,9 @@ const Post = (props) => {
            <div className="postBottom">
             <FaRegCommentDots size={30} />
            <button className="joinBtn" onClick={(e) => props.askToJoin(e)}> {!props.requested ? "Ask to join" : "Requested" } </button>
-           <RiBookmarkLine className="bookmarkBtn" size={30}/>
+            <p onClick={() => setIsSaved(!isSaved)}>
+            {!isSaved ? <RiBookmarkLine size={30} /> : <RiBookmarkFill size={30} />}
+            </p>
             </div> 
            
        </form> 

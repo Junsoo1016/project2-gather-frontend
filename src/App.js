@@ -199,13 +199,12 @@ function App() {
 
   const askToJoin = (e) => {
     e.preventDefault()
-    const copy = [...postList]
-    const index = postList.indexOf(e)
-    console.log(index);
-    copy[0].requested = true
-  }
+    const post = postList.find((post) => post.id === e.target.id)
+    axios.put(`http://localhost:3000/api/posts/id/${e.target.id}`, {
+  })
+}
 
-  const[sidebar, setSidebar] = useState(false)
+  const [sidebar, setSidebar] = useState(false)
 
   const showSidebar = () => {
     setSidebar(!sidebar)
