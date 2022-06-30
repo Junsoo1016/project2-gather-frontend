@@ -10,7 +10,7 @@ const UserBoard = (props) => {
     // const userId = useParams()
     
     const getUser = () => {
-        axios.get(`http://localhost:3000/api/users/userId/${props.user.userID}`)
+        axios.get(`https://warm-brook-55016.herokuapp.com/api/users/userId/${props.user.userID}`)
     }
 
     useEffect(() => {

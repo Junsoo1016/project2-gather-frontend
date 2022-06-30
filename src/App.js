@@ -57,14 +57,14 @@ function App() {
   const [userData, setUserData] = useState([])
   //Get User Data before it renders
   useEffect(() => {
-    axios.get('http://localhost:3000/api/users')
+    axios.get('https://warm-brook-55016.herokuapp.com/api/users')
     .then(res => setUserData(res.data))
   },[userData])
 
   const deleteUser = () => {
     console.log("delete user");
     console.log(user.userId);
-    axios.delete(`http://localhost:3000/api/users/userId/${user.userId}`)
+    axios.delete(`https://warm-brook-55016.herokuapp.com/api/users/userId/${user.userId}`)
     .then(res => {
       setUser({
         ...user,
@@ -76,7 +76,7 @@ function App() {
 
   const createUser = () => {
     console.log(userData);
-    axios.post('http://localhost:3000/api/users/', signUpForm)
+    axios.post('https://warm-brook-55016.herokuapp.com/api/users/', signUpForm)
   }
 
   const handleSignUp = (e) => {  
@@ -128,7 +128,7 @@ function App() {
   }
 
   const editUser = () => {
-    axios.put(`http://localhost:3000/api/users/userId/${user.id}`, editProfileForm)
+    axios.put(`https://warm-brook-55016.herokuapp.com/api/users/userId/${user.id}`, editProfileForm)
     .then(res => {
       setUser(res.data)
     })
@@ -189,18 +189,18 @@ function App() {
   const [postList, setPostList] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/posts')
+    axios.get('https://warm-brook-55016.herokuapp.com/api/posts')
     .then(res => setPostList(res.data))
   },[postList])
 
   const saveUserPost = () => {
-    axios.post(`http://localhost:3000/api/posts/userId/${user.userId}`, postInputForm)   
+    axios.post(`https://warm-brook-55016.herokuapp.com/api/posts/userId/${user.userId}`, postInputForm)   
   }
 
   const askToJoin = (e) => {
     e.preventDefault()
     const post = postList.find((post) => post.id === e.target.id)
-    axios.put(`http://localhost:3000/api/posts/id/${e.target.id}`, {
+    axios.put(`https://warm-brook-55016.herokuapp.com/api/posts/id/${e.target.id}`, {
   })
 }
 
