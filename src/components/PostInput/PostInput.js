@@ -13,7 +13,7 @@ const PostInput = (props) => {
             <h2>Create a post</h2>
             </div>
             <input onChange={props.handlePostChange} placeholder="Title" name="title"/>
-            <input onChange={props.handlePostChange} placeholder="Date" name="date"/>
+            <input onChange={props.handlePostChange} placeholder="Date(MM/DD/YYYY)" name="date"/>
             <Address postInputForm={props.postInputForm} setPostInputForm={props.setPostInputForm} />
             {/* <input onChange={props.handlePostChange} placeholder="Location" name="location"/> */}
             <input onChange={props.handlePostChange} className="description" placeholder="Description" name="description"/>
