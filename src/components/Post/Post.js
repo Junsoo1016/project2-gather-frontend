@@ -39,7 +39,7 @@ const Post = (props) => {
             
            <div className="postBottom">
             <FaRegCommentDots size={30} />
-           <button className="joinBtn" onClick={(e) => props.askToJoin(e)}> {!props.requested ? "Ask to join" : "Requested" } </button>
+           <button className="joinBtn"> Ask to join </button>
             <p onClick={() => setIsSaved(!isSaved)}>
             {!isSaved ? <RiBookmarkLine size={30} /> : <RiBookmarkFill size={30} />}
             </p>
@@ -50,3 +50,5 @@ const Post = (props) => {
 }
 
 export default Post
+
+//onClick={(e) => props.askToJoin(e)}> {!props.requested ? "Ask to join" : "Requested" }
